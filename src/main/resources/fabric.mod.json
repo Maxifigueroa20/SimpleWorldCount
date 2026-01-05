@@ -3,7 +3,7 @@
 	"id": "simpleworldcount",
 	"version": "${version}",
 	"name": "SimpleWorldCount",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Simple server world day counting",
 	"authors": [
 		"Me!"
 	],
@@ -13,17 +13,13 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/simpleworldcount/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"com.maxi.simpleworldcount.SimpleWorldCount"
-		],
 		"client": [
 			"com.maxi.simpleworldcount.SimpleWorldCountClient"
 		]
 	},
 	"mixins": [
-		"simpleworldcount.mixins.json",
 		{
 			"config": "simpleworldcount.client.mixins.json",
 			"environment": "client"
